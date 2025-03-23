@@ -7,7 +7,10 @@
    body{
      
       background-color: var(--accent01-color);
-      
+      align-content:space-between;
+      justify-content: center;
+      margin: 30px;
+            
    }
    
    header nav{
@@ -44,32 +47,34 @@
    }
    .hero h1{
       position: absolute;
-      top: 10%;
+      top: 2%;
       left: 20%;
-      background-color: var(--accent02-color);
+      background-color:  var(--accent02-color);
+      filter: opacity(0.8);
       padding: 15px;
       border-radius: 5px;
+      width: auto;
    }
    article {
       position: absolute;
       bottom: 10px;
-      left: 35%;
+      left: 34%;
       transform: translateX(-50%);
-      background-color: var(--accent01-color);
-      padding: 20px;
-      width: 60%;  
-      max-width: 600px; 
-      text-align: left;
+      background-color:var(--accent01-color);
+      filter: opacity(0.8);
+      width: auto;
+      padding: 10px;
+      align-items: center;
+        
       
   }
 
   article img {
    
     float: right;
-    width: 120px;
+    width: 210px;
     margin: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 30px
 
     
 }

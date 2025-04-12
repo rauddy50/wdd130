@@ -136,6 +136,7 @@ figcaption {
   gap: 2rem;
   padding: 2rem;
   justify-content: center;
+  align-items: center;
 }
 
 .figure-box figure {
@@ -436,17 +437,37 @@ thead {
 tbody{
   background-color: rgba(255, 255, 255, 0.458);
 }
-.trip-description{
+
+.figure-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
   justify-content: center;
   align-items: center;
-}
-.trip-description p{
   text-align: center;
-  padding-top:15px;
-  padding-bottom: 25px;
+  margin: 0;
 }
-.trip-description a{
+.figure-items img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.figure-items img:hover {
+  transform: scale(1.05);
+}
+
+.figure-items p{
+ 
+ padding-top:15px;
+ align-items: center;
+}
+.figure-items a{
   padding:10px;
+  grid-column: 2/-1;
   border: 1px solid black;
   text-decoration: none;
   list-style-type: none;
@@ -457,7 +478,5 @@ tbody{
   border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;
-  text-align: center;
-  
-    
+  text-align: center;    
 }

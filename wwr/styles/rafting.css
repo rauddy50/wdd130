@@ -438,6 +438,7 @@ tbody{
 }
 .trip-description{
   justify-content: center;
+  align-items: center;
 }
 .trip-description p{
   text-align: center;
